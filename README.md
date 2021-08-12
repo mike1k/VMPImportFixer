@@ -23,7 +23,7 @@ VMPImportFixer is an all-in-one tool; it will support X86 processes regardless o
 
 ```
 Usage:  VMPImportFixer
-  -proc         (required) process name/process id
+  -p            (required) process name/process id
   -mod:         (optional) name of module to dump.
   -section:     (optional) VMP section name to use if changed from default (VMP allows custom names)
 ```
@@ -31,11 +31,15 @@ Usage:  VMPImportFixer
 # Examples
 <details>
   <summary>Images</summary>
-  
+
+* Before
 ![b1](https://i.imgur.com/wzraZfe.png)
+* After
 ![a1](https://i.imgur.com/E12Gnxc.png)
 
+* Before
 ![b2](https://i.imgur.com/eKdCdtm.png)
+* After
 ![a2](https://i.imgur.com/acPdGVt.png)
 </details>
 
@@ -43,6 +47,7 @@ Usage:  VMPImportFixer
 
 * Add support for loading binaries off the disk into a state where it can be monitored at specific stages (such as unpacking) then fixed.
 * Add relocation handling on X86 binaries.
+* Kernel support.
 
 # Dependencies
 * [pepp](https://github.com/mike1k/pepp)
